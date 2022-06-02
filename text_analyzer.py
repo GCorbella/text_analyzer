@@ -17,7 +17,18 @@ print(f"The second letter, {letter2} ,appears {letter2count} times.")
 print(f"The third letter, {letter3} ,appears {letter3count} times.")
 
 list_text = text.split()
-list_text = list(list_text)
 n_words = len(list_text)
 
 print(f"This text have {n_words} words.")
+
+fword = list_text[0]
+lword = list_text[-1]
+fletter = list(fword)[0]
+lletter = list(lword)[-1]
+
+print(f"The first letter in the text is {fletter} and the last letter in the text is {lletter}")
+
+list_text.reverse()
+text_backwards = " ".join(list_text)
+
+print(f"This is the text backwards:\n{text_backwards}")
